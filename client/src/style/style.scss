@@ -1,0 +1,67 @@
+.background-image {
+   background-image: url("../img/background.png");
+   background-size: cover;
+   min-height: 100vh;
+}
+.content-container {
+   max-width: 400px;
+}
+.food-image {
+   border: 1px solid #ddd;
+   border-radius: 4px;
+   padding: 5px;
+   width: 300px;
+}
+// header styles, font size, font families
+h1 {
+   font-family: "Yellowtail", cursive;
+   color: red;
+   font-size: 100px;
+}
+h4 {
+   font-size: 18px;
+}
+h5 {
+   font-weight: 500;
+}
+p {
+   font-size: 16px;
+}
+.custom-style {
+   font-size: 18px;
+}
+.resNameFont {
+   font-size: 30px;
+   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+// unordered lists style
+ul {
+   list-style-type: none; /* Remove bullets */
+   padding: 0; /* Remove padding */
+   margin: 0; /* Remove margins */
+}
+li {
+   font-size: 22px;
+   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+// card spacing, shadow
+// .card-space {
+//    margin-bottom: 30px;
+// }
+.card {
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   margin-bottom: 30px;
+}
+.card:hover {
+   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+// media query for smooth sizing transition
+@media only screen and(max-width: 500px) {
+   .card-space {
+      text-align: center;
+   }
+   .food-image {
+      width: 100%;
+   }
+}
