@@ -1,4 +1,4 @@
-module.exports = function userPost(userId) {
+module.exports = function userPost(userId, order) {
    return `
    SELECT
      users.id AS user_id, 
@@ -17,5 +17,8 @@ module.exports = function userPost(userId) {
     INNER JOIN 
         user_posts ON user_id = users.id 
     WHERE 
-        user_posts.user_id = '${userId}'`;
+        user_posts.user_id = '${userId}'
+    ORDER BY 
+        ${order};
+        `;
 };

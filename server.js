@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 
 app.use("/api/v1/users", require("./api/v1/users"));
+app.use("/api/v1/saved-posts", require("./api/v1/saved-posts"));
 app.get("/", (req, res) => res.send("Hello World!"));
 
 const port = process.env.PORT || 3001;
