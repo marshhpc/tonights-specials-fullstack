@@ -11,7 +11,7 @@ const userPost = require("../../queries/userPost");
 router.get("/", (req, res) => {
    console.log(req.query);
    const { userId, order } = req.query;
-   db.query(userPost(userId, order))
+   db.query(userPost, [userId, order])
       .then((dbRes) => {
          res.json(dbRes);
       })
